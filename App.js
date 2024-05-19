@@ -1,6 +1,8 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, FlatList, TouchableOpacity, Modal } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import React, {useState} from 'react';
+import ModalCustom from "./src/components/modalCustom";
+import TaskInput from "./src/components/input";
+import ItemLista from "./src/components/itemLista";
 
 const taskProductos = [
   {id: 1, value: "Torta chica"},
@@ -45,76 +47,27 @@ const taskProductos = [
 
   return (
     <View style={styles.container}>
-      <View>
-        <StatusBar style="auto" />
-        <TextInput 
-          style={styles.input}
-          onChangeText={handleChangeText}
-          value={textItem}
-        />    
-      </View>
-
-      <View>
-        <Button title="Añadir" color="#E9B2BC" onPress={addItem}/>
-      </View>
-        
+      <TaskInput 
+        addItem={addItem}
+        handleChangeText={handleChangeText}
+        textItem={textItem}
+      />
 
       <View>
         <Text style={styles.titulo}>Creando App de pasteleria</Text>
       </View>
-        
+      
+      <ItemLista 
+        itemList={itemList}
+        handleModal={handleModal}
+      />
 
-      <View style={styles.taskContainer}>
-
-        <FlatList
-            style={styles.flatlist}
-            data={itemList}
-            keyExtractor={task => task.id.toString()}
-            renderItem={({ item }) => 
-              <TouchableOpacity 
-              style={styles.card}
-              onPress={()=> handleModal(item)}
-              >
-                <Text style={styles.taskText}>{item.value}</Text>
-              </TouchableOpacity> 
-            }
-        />
-
-
-        {/* {itemList.map(task => 
-          <View key={task.id} style={styles.card}>
-            <Text style={styles.text}>{task.value}</Text>
-          </View> */}
-        {/* // <View style={styles.card}>
-        //   <Text style={styles.text}>Producto 2</Text>
-        // </View>
-        // <View style={styles.card}>
-        //   <Text style={styles.text}>Producto 3</Text>
-        // </View>
-        // <View style={styles.card}>
-        //   <Text style={styles.text}>Producto 4</Text>
-        // </View>
-        )} */}
-        
-      </View>
-
-      <Modal visible={modalVisible} animationType='slide' transparent={true}>
-        <View style={styles.modalStyles}>
-          <View style={styles.modalContainer}>
-            <View style={styles.textContainer}>
-              <Text>Seguro que quieres borrar:</Text>
-            </View>
-            <View style={styles.textContainer}>
-              <Text style={styles.modalText}>{itemSelected.value}</Text>
-            </View>
-            <View style={styles.modalBtn}>
-              <Button title='Borrar' onPress={handleDelete}/>
-              <Button title='Cancelar' onPress={handleCancelModal}/>
-            </View>
-          </View>
-        </View>
-
-      </Modal>
+      <ModalCustom
+        modalVisible={modalVisible}
+        handleCancelModal={handleCancelModal}
+        handleDelete={handleDelete}
+        itemSelected={itemSelected}
+      />
     </View>
   );
 }
@@ -126,9 +79,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#E1F2FB',
     alignItems: 'center',
-    // justifyContent: 'center',
-    
-    
   },
   input: {
     fontSize: 20,
@@ -143,7 +93,7 @@ const styles = StyleSheet.create({
     fontFamily: 'sans-serif-thin',
     borderRadius: 5,
     marginBottom: 20,
-    marginTop: 25,
+    marginTop: 20,
   },
   card: {
     backgroundColor: '#F3DFE3',
