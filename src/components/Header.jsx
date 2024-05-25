@@ -19,6 +19,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
+    fontFamily: 'Dancing',
     fontSize: 35,
     fontFamily: 'sans-serif-medium',
     marginBottom: 25,

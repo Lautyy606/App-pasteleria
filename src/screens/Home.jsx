@@ -4,13 +4,20 @@ import Category from "../components/Category";
 import categories from "../data/categories.json";
 import products from "../data/products.json";
 
-const Home = () => {
+const Home = ({setCategorySelected}) => {
+
   return (
     <View style={styles.flatListContainer}>
       <FlatList 
+        showsVerticalScrollIndicator={false}
         keyExtractor={item => item}
         data={categories}
-        renderItem = {({item}) => <Category category={item}/>}
+        renderItem = {({item}) => 
+          <Category 
+            selectCategory={setCategorySelected} 
+            category={item}
+          />
+        }
       />
     </View>
   )
