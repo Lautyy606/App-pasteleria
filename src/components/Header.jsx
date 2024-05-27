@@ -20,13 +20,12 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: 'Dancing',
-    fontSize: 35,
-    fontFamily: 'sans-serif-medium',
+    fontSize: 40,
     marginBottom: 25,
     backgroundColor: '#CDF0EA',
     width: '100%',
     height: 120,
     textAlign: 'center',
-    paddingTop: 60
+    paddingTop: 55
   }
 })

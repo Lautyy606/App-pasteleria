@@ -6,10 +6,13 @@ import ItemListCategory from './src/screens/ItemListCategory';
 import { useFonts } from "expo-font";
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from "react";
+import ItemDetail from './src/screens/ItemDetail';
 
 const App = () => {
   const [fontsLoaded, fontError] = useFonts({
-    'Dancing': require('./assets/Montserrat-Regular.ttf'),
+    'Dancing': require('./assets/DancingScript-Bold.ttf'),
+    'Josefin': require('./assets/JosefinSans-Regular.ttf'),
+    'Montserrat': require('./assets/Montserrat-Regular.ttf')
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -19,15 +22,25 @@ const App = () => {
   }, [fontsLoaded, fontError]);
 
   const [categorySelected, setCategorySelected] = useState("")
+  const [itemSelected, setItemSelected] = useState("")
 
   return (
     <View style={styles.container}>
       <Header title={"Dulzura Infinita"}/>
-      {categorySelected ? 
-      <ItemListCategory categorySelected={categorySelected}
-      setCategorySelected ={setCategorySelected}/> 
-      : 
+      {!categorySelected ? 
       <Home setCategorySelected={setCategorySelected}/>
+      : 
+      
+      !itemSelected ?
+      
+      <ItemListCategory categorySelected={categorySelected}
+      setCategorySelected ={setCategorySelected} 
+      setItemSelected={setItemSelected}/>
+      :
+      <ItemDetail
+        idSelected={itemSelected}
+        setProductSelected={setItemSelected}
+      />
       }
     </View>
   )

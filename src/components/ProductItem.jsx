@@ -1,16 +1,18 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Card from './Card'
 
-const ProductItem = ({product}) => {
+const ProductItem = ({product, setItemSelected = () => {}}) => {
   return (
     <Card style={styles.productCard}>
+      <Pressable onPress={ () => setItemSelected(product.id)}>
         <Text style={styles.textCategory}>{product.title}</Text>
         <Image
             rensizeMode='cover'
             style={styles.image}
             // source={{uri: product.image[0]}}
         />
+      </Pressable>
     </Card>
   )
 }
@@ -19,10 +21,9 @@ export default ProductItem
 
 const styles = StyleSheet.create({
     textCategory: {
-        fontSize: 17,
-        fontFamily: 'sans-serif-thin',
-        fontWeight: 'bold',
+        fontSize: 18,
+        fontFamily: 'Montserrat',
         textAlign: 'center',
-        marginTop: 6,
+        marginTop: 12,
     }
 })

@@ -4,7 +4,7 @@ import products from "../data/products.json";
 import ProductItem from "../components/ProductItem";
 import Search from '../components/Search';
 
-const ItemListCategory = ({categorySelected = "", setCategorySelected = () => {}}) => {
+const ItemListCategory = ({categorySelected = "", setCategorySelected = () => {}, setItemSelected = () => {}}) => {
 
     const [productsFiltered, setProductsFiltered] = useState([])
     const [keyword, setKeyword] = useState("")
@@ -21,7 +21,7 @@ const ItemListCategory = ({categorySelected = "", setCategorySelected = () => {}
         <FlatList
         keyExtractor={(producto) => producto.id}
         data={productsFiltered}
-        renderItem={({item})=> <ProductItem product={item}/> }
+        renderItem={({item})=> <ProductItem product={item} setItemSelected={setItemSelected}/> }
         />
     </View>
   )

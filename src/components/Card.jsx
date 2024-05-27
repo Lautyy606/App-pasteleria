@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#F7DBF0',
         width: 200,
-        height: 40,
+        height: 55,
         marginTop: 15,
         marginBottom: 15,
         borderRadius: 5,
@@ -28,12 +28,11 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
     text: {
-        fontSize: 17,
-        fontFamily: 'sans-serif-thin',
-        fontWeight: 'bold',
-        textAlign: 'center',
-        marginTop: 6,
-    }
+      fontSize: 20,
+      fontFamily: 'Josefin',
+      textAlign: 'center',
+      marginTop: 15,
+  }
 })
 
 

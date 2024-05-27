@@ -34,10 +34,9 @@ const styles = StyleSheet.create({
         borderRadius: 5,
     },
     text: {
-        fontSize: 17,
-        fontFamily: 'sans-serif-thin',
-        fontWeight: 'bold',
+        fontSize: 20,
+        fontFamily: 'Montserrat',
         textAlign: 'center',
-        marginTop: 6,
+        marginTop: 15,
     }
 })
