@@ -1,4 +1,4 @@
-import { StyleSheet, View } from 'react-native'
+import { Platform, SafeAreaView, StatusBar, StyleSheet, View } from 'react-native'
 import Home from "./src/screens/Home";
 import React, { useState } from 'react'
 import Header from './src/components/Header';
@@ -23,9 +23,10 @@ const App = () => {
 
   const [categorySelected, setCategorySelected] = useState("")
   const [itemSelected, setItemSelected] = useState("")
+  
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Header title={"Dulzura Infinita"}/>
       {!categorySelected ? 
       <Home setCategorySelected={setCategorySelected}/>
@@ -42,7 +43,7 @@ const App = () => {
         setProductSelected={setItemSelected}
       />
       }
-    </View>
+    </SafeAreaView>
   )
 }
 
@@ -52,6 +53,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    backgroundColor: '#F9F9F9'
-  }
+    backgroundColor: '#F9F9F9',
+    // paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
+  },
 })
