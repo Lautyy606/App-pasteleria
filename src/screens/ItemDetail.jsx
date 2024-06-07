@@ -3,11 +3,13 @@ import React from 'react'
 import { useEffect, useState } from "react";
 import products from "../data/products.json";
 
-const ItemDetail = ({ idSelected, setProductSelected }) => {
+const ItemDetail = ({ route, navigation }) => {
 
     const [product, setProduct] = useState(null)
     const {width, height} = useWindowDimensions()
     const [orientation, setOrientation] = useState("vertical")
+
+    const {productId: idSelected} = route.params
 
     useEffect(() => {
         if(width > height) setOrientation("horizontal")
@@ -24,7 +26,7 @@ const ItemDetail = ({ idSelected, setProductSelected }) => {
 
   return (
     <View>
-        <Button onPress={() => setProductSelected("")} title="Go back" />
+        <Button onPress={() => navigation.goBack()} title="Go back" />
         {product ? (
             <View 
             style={orientation === "vertical"? styles.mainContainer 

@@ -1,12 +1,8 @@
-import { Platform, SafeAreaView, StatusBar, StyleSheet, View } from 'react-native'
-import Home from "./src/screens/Home";
-import React, { useState } from 'react'
-import Header from './src/components/Header';
-import ItemListCategory from './src/screens/ItemListCategory';
+import { SafeAreaView, StyleSheet, Platform, StatusBar } from 'react-native'
 import { useFonts } from "expo-font";
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from "react";
-import ItemDetail from './src/screens/ItemDetail';
+import Navigator from './src/navigation/Navigator';
 
 const App = () => {
   const [fontsLoaded, fontError] = useFonts({
@@ -21,28 +17,10 @@ const App = () => {
     }
   }, [fontsLoaded, fontError]);
 
-  const [categorySelected, setCategorySelected] = useState("")
-  const [itemSelected, setItemSelected] = useState("")
-  
 
   return (
     <SafeAreaView style={styles.container}>
-      <Header title={"Dulzura Infinita"}/>
-      {!categorySelected ? 
-      <Home setCategorySelected={setCategorySelected}/>
-      : 
-      
-      !itemSelected ?
-      
-      <ItemListCategory categorySelected={categorySelected}
-      setCategorySelected ={setCategorySelected} 
-      setItemSelected={setItemSelected}/>
-      :
-      <ItemDetail
-        idSelected={itemSelected}
-        setProductSelected={setItemSelected}
-      />
-      }
+      <Navigator/>
     </SafeAreaView>
   )
 }
@@ -52,8 +30,8 @@ export default App
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    // alignItems: 'center',
     backgroundColor: '#F9F9F9',
-    // paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
+    marginTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
   },
 })

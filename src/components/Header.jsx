@@ -21,11 +21,10 @@ const styles = StyleSheet.create({
   text: {
     fontFamily: 'Dancing',
     fontSize: 40,
-    marginBottom: 25,
     backgroundColor: '#CDF0EA',
     width: '100%',
     height: 120,
     textAlign: 'center',
-    paddingTop: 55
+    paddingTop: 30
   }
 })

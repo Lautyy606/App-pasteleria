@@ -1,10 +1,9 @@
-import { StyleSheet, Text, View, FlatList } from 'react-native'
+import { StyleSheet, View, FlatList } from 'react-native'
 import React from 'react'
 import Category from "../components/Category";
 import categories from "../data/categories.json";
-import products from "../data/products.json";
 
-const Home = ({setCategorySelected}) => {
+const Home = ({setCategorySelected, route, navigation}) => {
 
   return (
     <View style={styles.flatListContainer}>
@@ -14,7 +13,7 @@ const Home = ({setCategorySelected}) => {
         data={categories}
         renderItem = {({item}) => 
           <Category 
-            selectCategory={setCategorySelected} 
+            navigation={navigation} 
             category={item}
           />
         }
@@ -22,6 +21,7 @@ const Home = ({setCategorySelected}) => {
     </View>
   )
 }
+
 
 const styles = StyleSheet.create({
   flatListContainer: {
