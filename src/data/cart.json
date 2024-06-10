@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "title": "Torta para 10/12 pers.",
+        "description": "Bizcochuelos de vainilla/chips/chocolate/coco. Humedecidos con chocolatada, cubiertos en buttercream.",
+        "price": 35000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 2,
+        "title": "Torta para 30 pers.",
+        "description": "Torta con 4 rellenos a elección, cubierta de buttercream.",
+        "price": 55000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 3,
+        "title": "Torta para 50 pers.",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 4,
+        "title": "Torta Oreo",
+        "description": "Bizcochuelo de chocolate, mousse de ddl, oreos y merengue seco.",
+        "price": 35000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 5,
+        "title": "Chocotorta",
+        "description": " Capas de galletitas de chocolate mojadas en café con un relleno suave y cremoso de queso crema y dulce de leche.",
+        "price": 38000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 6,
+        "title": "Torta Argentina",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 7,
+        "title": "Rogel",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 8,
+        "title": "Brownie",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 9,
+        "title": "Cheesecake",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 10,
+        "title": "Marquise",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tortas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 11,
+        "title": "Lemon Pie",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tartas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 12,
+        "title": "Tarta de ricota",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tartas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 13,
+        "title": "Tarta de frutilla",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tartas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 14,
+        "title": "Tarta de coco y ddl",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tartas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 15,
+        "title": "Tarta Tofi",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Tartas",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 16,
+        "title": "Budín de vainilla",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Budines",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 17,
+        "title": "Budín de chocolate",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Budines",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 18,
+        "title": "Budín de limón",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Budines",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 19,
+        "title": "Budín marmolado",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Budines",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 20,
+        "title": "Budín de naranja",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Budines",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 21,
+        "title": "Cookies de vainilla con chips",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Cookies",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 22,
+        "title": "Cookies de chocolate con chips",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Cookies",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 23,
+        "title": "Cookies de dulce de leche",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Cookies",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 24,
+        "title": "Cookies de limón",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Cookies",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 25,
+        "title": "Cookies Oreo",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Cookies",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 26,
+        "title": "Shots de Lemon Pie",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Shots",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 27,
+        "title": "Shots de chocotorta",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Shots",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 28,
+        "title": "Shots de Oreos",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Shots",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 29,
+        "title": "Shots de brownie",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Shots",
+        "images": [],
+        "quantity": 100
+    },
+    {
+        "id": 30,
+        "title": "Shots de Cheesecake",
+        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+        "price": 80000,
+        "stock": 100,
+        "category": "Shots",
+        "images": [],
+        "quantity": 100
+    }
+]

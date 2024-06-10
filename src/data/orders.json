@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "userId": 2,
+        "createdAt": 1679869276580,
+        "items": [
+            {
+                "id": 1,
+                "title": "Torta para 10/12 pers.",
+                "description": "Bizcochuelos de vainilla/chips/chocolate/coco. Humedecidos con chocolatada, cubiertos en buttercream.",
+                "price": 35000,
+                "stock": 100,
+                "category": "Tortas",
+                "images": [],
+                "quantity": 100
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "userId": 2,
+        "createdAt": 1679869276580,
+        "items": [
+            {
+                "id": 6,
+                "title": "Torta Argentina",
+                "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
+                "price": 80000,
+                "stock": 100,
+                "category": "Tortas",
+                "images": [],
+                "quantity": 100
+            }
+        ]
+    }
+]
