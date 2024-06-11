@@ -3,6 +3,8 @@ import { useFonts } from "expo-font";
 import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from "react";
 import Navigator from './src/navigation/Navigator';
+import { Provider } from 'react-redux';
+import store from './src/store';
 
 const App = () => {
   const [fontsLoaded, fontError] = useFonts({
@@ -20,7 +22,9 @@ const App = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Navigator/>
+      <Provider store={store}>
+        <Navigator/>
+      </Provider>
     </SafeAreaView>
   )
 }
