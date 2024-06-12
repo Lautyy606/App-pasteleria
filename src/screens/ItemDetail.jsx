@@ -1,28 +1,30 @@
 import { StyleSheet, Text, View, Button, Image, useWindowDimensions } from 'react-native'
 import React from 'react'
 import { useEffect, useState } from "react";
-import products from "../data/products.json";
+import { images } from "../data/images";
+import { useGetProductByIdQuery } from '../services/shopService';
+import { useDispatch } from 'react-redux';
+import { addCartItem } from '../features/Cart/cartSlice';
 
 const ItemDetail = ({ route, navigation }) => {
 
-    const [product, setProduct] = useState(null)
+    const dispatch = useDispatch()
     const {width, height} = useWindowDimensions()
     const [orientation, setOrientation] = useState("vertical")
 
     const {productId: idSelected} = route.params
+
+    const {data: product, error, isLoading} = useGetProductByIdQuery(idSelected)
 
     useEffect(() => {
         if(width > height) setOrientation("horizontal")
         else setOrientation("vertical")
     }, [width, height])
 
-
-    useEffect(() => {
-        const productSelected = products.find(
-            (product) => product.id === idSelected
-        )
-        setProduct(productSelected)
-    }, [idSelected])
+    const handleAddCart = () => {
+        dispatch(addCartItem({...product, quantity: 1}))
+    }
+    const imageSource = product ? images[product.images] : null
 
   return (
     <View>
@@ -35,14 +37,14 @@ const ItemDetail = ({ route, navigation }) => {
                 resizeMode='cover'
                 style={orientation === "vertical"? styles.image 
                 : styles.imageHorizontal}
-                // source={{uri: product.images[0]}}
+                source={imageSource}
                 />
                 <View style={orientation === "vertical" ? styles.textContainer 
                 : styles.textContainerHorizontal}>
                     <Text>{product.title}</Text>
                     <Text>{product.description}</Text>
                     <Text>${product.price}</Text>
-                    <Button title="Agregar al carrito"></Button>
+                    <Button title="Agregar al carrito" onPress={handleAddCart}></Button>
                 </View>
             </View>
         ) : null}

@@ -1,8 +1,8 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React, { useState, useEffect } from 'react'
-import products from "../data/products.json";
 import ProductItem from "../components/ProductItem";
 import Search from '../components/Search';
+import { useGetProductsByCategoryQuery } from '../services/shopService';
 
 const ItemListCategory = ({setCategorySelected = () => {}, navigation, route}) => {
 
@@ -10,11 +10,14 @@ const ItemListCategory = ({setCategorySelected = () => {}, navigation, route}) =
     const [keyword, setKeyword] = useState("")
     const {category : categorySelected} = route.params
 
+    const {data: productsFetched, error: errorFromFetch, isLoading} = useGetProductsByCategoryQuery(categorySelected)
+
     useEffect(() => {
-        const productsFiltered = products.filter(product => product.category === categorySelected)
-        const productsFilter = productsFiltered.filter(product => product.title.toLocaleLowerCase().includes(keyword))
+      if (!isLoading) {
+        const productsFilter = productsFetched.filter(product => product.title.toLocaleLowerCase().includes(keyword))
           setProductsFiltered(productsFilter);
-    }, [keyword, categorySelected])
+      }
+    }, [keyword, categorySelected, productsFetched, isLoading])
 
   return (
     <View style={styles.flatListContainer}>

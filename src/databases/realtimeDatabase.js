@@ -1,0 +1,1 @@
+export const baseUrl = "https://dulzura-infinita-default-rtdb.firebaseio.com/"

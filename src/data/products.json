@@ -1,272 +1,272 @@
 [
     {
         "id": 1,
-        "title": "Torta para 10/12 pers.",
+        "title": "Torta para 15 pers.",
         "description": "Bizcochuelos de vainilla/chips/chocolate/coco. Humedecidos con chocolatada, cubiertos en buttercream.",
-        "price": 35000,
+        "price": 30000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Torta-15-pers.jpeg"
     },
     {
         "id": 2,
         "title": "Torta para 30 pers.",
-        "description": "Torta con 4 rellenos a elección, cubierta de buttercream.",
-        "price": 55000,
+        "description": "Bizcochuelos de vainilla/chips/chocolate/coco. Humedecidos con chocolatada, cubiertos en buttercream.",
+        "price": 50000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Torta-30-pers.jpeg"
     },
     {
         "id": 3,
         "title": "Torta para 50 pers.",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Bizcochuelos de vainilla/chips/chocolate/coco. Humedecidos con chocolatada, cubiertos en buttercream.",
+        "price": 60000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Torta-50-pers.jpeg"
     },
     {
         "id": 4,
         "title": "Torta Oreo",
-        "description": "Bizcochuelo de chocolate, mousse de ddl, oreos y merengue seco.",
+        "description": "Base de galletitas oreo, rellena de dulce de leche repostero y crema oreo, decorada con dulce de leche y galletitas oreo molidas. Para 10 personas aprox.",
         "price": 35000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Oreo.jpeg"
     },
     {
         "id": 5,
         "title": "Chocotorta",
-        "description": " Capas de galletitas de chocolate mojadas en café con un relleno suave y cremoso de queso crema y dulce de leche.",
+        "description": "Capas de galletitas Chocolinas, humedecidas en café, rellenas con una mezcla de dulce de leche repostero y queso crema, decorada con un drip de chocolate, dulce de leche natural y chocolate semiamargo rallado. Para 10 personas aprox.",
         "price": 38000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Chocotorta.jpeg"
     },
     {
         "id": 6,
         "title": "Torta Argentina",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Finas capas de pionono de vainilla rellenas con dulce de leche repostero, cubierta con glasé real y decorada con chocolate semiamargo rallado. Para 10 personas aprox.",
+        "price": 28000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Argentina.jpeg"
     },
     {
         "id": 7,
         "title": "Rogel",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Finas capas de hojaldre rellenas con dulce de leche repostero, decorado con picos de merengue. Para 10 personas aprox.",
+        "price": 25000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Rogel.jpeg"
     },
     {
         "id": 8,
         "title": "Brownie",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base húmeda de chocolate, decorado con dulce de leche repostero y picos de merengue. Para 10 personas aprox.",
+        "price": 25000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Brownie.jpeg"
     },
     {
         "id": 9,
         "title": "Cheesecake",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de galletitas de vainilla molidas, mezcla de queso crema y crema de leche horneada, decorado con mermelada casera de frutos rojos y un extra de frutos rojos por encima. Para 10 personas aprox.",
+        "price": 25000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Cheesecake.jpeg"
     },
     {
         "id": 10,
         "title": "Marquise",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base húmeda de chocolate, sin harina, decorado con dulce de leche repostero, crema chantilly y chocolate semiamargo rallado. Para 10 personas aprox.",
+        "price": 27000,
         "stock": 100,
         "category": "Tortas",
-        "images": []
+        "images": "Marquise.jpeg"
     },
     {
         "id": 11,
         "title": "Lemon Pie",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de masa sablée, rellena de curd de limon, cubierta con merengue italiano. De 24 cm de diámetro. Rinde 10 porciones.",
+        "price": 30000,
         "stock": 100,
         "category": "Tartas",
-        "images": []
+        "images": "Lemon-Pie.jpeg"
     },
     {
         "id": 12,
         "title": "Tarta de ricota",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Masa sablée, rellena de ricota endulzada, aromatizada con ralladura de limón, decorada con azúcar impalpable espolvoreada. De 24 cm de diámetro. Rinde 10 porciones.",
+        "price": 22000,
         "stock": 100,
         "category": "Tartas",
-        "images": []
+        "images": "Ricota.jpeg"
     },
     {
         "id": 13,
         "title": "Tarta de frutilla",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de masa sablée, rellena de crema chantilly, cubierta con frutillas finamente rebanadas. De 24 cm de diámetro. Rinde 10 porciones.",
+        "price": 28000,
         "stock": 100,
         "category": "Tartas",
-        "images": []
+        "images": "Frutilla.jpeg"
     },
     {
         "id": 14,
         "title": "Tarta de coco y ddl",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de masa sablée, rellena de dulce de leche repostero, cubierta con un crocante de coco, decorada con dulce de leche. De 24 cm de diámetro. Rinde 10 porciones.",
+        "price": 26000,
         "stock": 100,
         "category": "Tartas",
-        "images": []
+        "images": "Coco.jpeg"
     },
     {
         "id": 15,
         "title": "Tarta Tofi",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de masa sablée, rellena de dulce de leche repostero, cubierta con ganache de chocolate semiamargo y decorada con dulce de leche. De 24 cm de diámetro. Rinde 10 porciones.",
+        "price": 25000,
         "stock": 100,
         "category": "Tartas",
-        "images": []
+        "images": "Tofi.jpeg"
     },
     {
         "id": 16,
         "title": "Budín de vainilla",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Masa de vainilla con costra de azúcar. Puede ser simple, con chips o relleno de dulce de leche.",
+        "price": 3500,
         "stock": 100,
         "category": "Budines",
-        "images": []
+        "images": "Budin-vainilla.jpeg"
     },
     {
         "id": 17,
         "title": "Budín de chocolate",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Masa húmeda de chocolate, con chips de chocolate.",
+        "price": 3500,
         "stock": 100,
         "category": "Budines",
-        "images": []
+        "images": "Budin-chocolate.jpeg"
     },
     {
         "id": 18,
         "title": "Budín de limón",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Masa de limón, con ralladura de limón, espolvoreado con azúcar impalpable.",
+        "price": 3500,
         "stock": 100,
         "category": "Budines",
-        "images": []
+        "images": "Budin-limon.jpeg"
     },
     {
         "id": 19,
         "title": "Budín marmolado",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Masa de vainilla mezclada masa de chocolate, cubierto con chocolate.",
+        "price": 3500,
         "stock": 100,
         "category": "Budines",
-        "images": []
+        "images": "Budin-marmolado.jpeg"
     },
     {
         "id": 20,
-        "title": "Budín de naranja",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "title": "Budín de frutos rojos",
+        "description": "Masa de vainilla con frutos rojos, cubierto de glasé de limón.",
+        "price": 4000,
         "stock": 100,
         "category": "Budines",
-        "images": []
+        "images": "Budin-frutos-rojos.jpeg"
     },
     {
         "id": 21,
-        "title": "Cookies de vainilla con chips",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "title": "Cookies Classic",
+        "description": "Galleta de vainilla con chips de chocolate con leche y chips de chocolate blanco.",
+        "price": 1000,
         "stock": 100,
         "category": "Cookies",
-        "images": []
+        "images": "Cookie-classic.jpeg"
     },
     {
         "id": 22,
-        "title": "Cookies de chocolate con chips",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "title": "Cookies Dark Chocolate",
+        "description": "Galleta de chocolate con chips de chocolate semiamargo y una pizca de sal marina.",
+        "price": 1000,
         "stock": 100,
         "category": "Cookies",
-        "images": []
+        "images": "Cookie-dark.jpeg"
     },
     {
         "id": 23,
-        "title": "Cookies de dulce de leche",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "title": "Cookies Red Velvet",
+        "description": "Galleta de terciopelo rojo con queso crema y chips de chocolate blanco.",
+        "price": 1000,
         "stock": 100,
         "category": "Cookies",
-        "images": []
+        "images": "Cookie-red.jpeg"
     },
     {
         "id": 24,
-        "title": "Cookies de limón",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "title": "Cookies Lemon",
+        "description": "Galleta de limón con chips de chocolate blanco y glasé de limón.",
+        "price": 1000,
         "stock": 100,
         "category": "Cookies",
-        "images": []
+        "images": "Cookie-lemon.jpeg"
     },
     {
         "id": 25,
         "title": "Cookies Oreo",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Galleta de vainilla con chips de chocolate con leche y trozos de galletitas oreo.",
+        "price": 1000,
         "stock": 100,
         "category": "Cookies",
-        "images": []
+        "images": "Cookie-oreo.jpeg"
     },
     {
         "id": 26,
         "title": "Shots de Lemon Pie",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de galletitas de vainilla, relleno de curd de limón, decorado con merengue.",
+        "price": 1500,
         "stock": 100,
         "category": "Shots",
-        "images": []
+        "images": "Shot-lemon-pie.jpeg"
     },
     {
         "id": 27,
         "title": "Shots de chocotorta",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de galletitas Chocolinas intercalado con mezcla de dulce de leche repostero y queso crema.",
+        "price": 1500,
         "stock": 100,
         "category": "Shots",
-        "images": []
+        "images": "Shot-chocotorta.jpeg"
     },
     {
         "id": 28,
         "title": "Shots de Oreos",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de galletitas Oreo, relleno de dulce de leche repostero y crema oreo.",
+        "price": 1500,
         "stock": 100,
         "category": "Shots",
-        "images": []
+        "images": "Shot-oreo.jpeg"
     },
     {
         "id": 29,
         "title": "Shots de brownie",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de brownie, relleno de dulce de leche repostero, decorado con merengue.",
+        "price": 1500,
         "stock": 100,
         "category": "Shots",
-        "images": []
+        "images": "Shot-brownie.jpeg"
     },
     {
         "id": 30,
         "title": "Shots de Cheesecake",
-        "description": "Torta con 3 rellenos a elección, cubierta de buttercream.",
-        "price": 80000,
+        "description": "Base de galletitas de vainilla, relleno con cheesecake, decorado con mermelada casera de frutos rojos y un extra de frutos rojos.",
+        "price": 1500,
         "stock": 100,
         "category": "Shots",
-        "images": []
+        "images": "Shot-cheesecake.jpeg"
     }
 ]
