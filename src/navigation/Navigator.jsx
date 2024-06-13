@@ -1,16 +1,22 @@
 import { StyleSheet } from 'react-native'
-import React from 'react'
+import React, {useState} from 'react'
 import { NavigationContainer } from '@react-navigation/native'
-import BottomTabNavigator from './BottomTabNavigator';
-
+import BottomTabNavigator from './BottomTabNavigator'
+import HomeStackNavigator from './HomeStackNavigator'
+import SingupScreen from '../screens/SingupScreen'
+import LoginScreen from '../screens/LoginScreen'
+import AuthStackNavigator from './AuthStackNavigator'
+import { useSelector } from 'react-redux'
 
 const Navigator = () => {
+
+  const {user} = useSelector(state => state.auth.value)
   return (
-      <NavigationContainer>
-        <BottomTabNavigator/>
-      </NavigationContainer>
-    )
-  }
+    <NavigationContainer>
+        {user ? <BottomTabNavigator/> : <AuthStackNavigator/>}
+    </NavigationContainer>
+  )
+}
 
 export default Navigator
 

@@ -2,9 +2,16 @@ import { StyleSheet, Text, View, Pressable, FlatList } from 'react-native'
 import React from 'react'
 import CartItem from "../components/CartItem";
 import { useSelector } from 'react-redux';
+import { usePostOrderMutation } from "../services/shopService"
 
 const Cart = () => {
     const {items: CartData, total} = useSelector(state => state.cart.value)
+
+    const [triggerPostOrder, result] = usePostOrderMutation()
+
+    const onConfirmOrder = () => {
+      triggerPostOrder({items: CartData, user: 'Lautaro', total})
+  }
 
 
   return (
@@ -21,7 +28,7 @@ const Cart = () => {
         }} 
       />
       <View style={styles.totalContainer}>
-        <Pressable>
+        <Pressable onPress={onConfirmOrder}>
             <Text>
                 Confirmar
             </Text>
